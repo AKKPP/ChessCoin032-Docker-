@@ -1,0 +1,8 @@
+dependencies
+.*.swp
+*.*~*
+*.bak
+*.rej
+*.orig
+*.o
+*.patch

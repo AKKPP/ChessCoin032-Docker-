@@ -1,0 +1,14 @@
+version: '2'
+services:
+  rpc-node:
+#    image: $CI_REGISTRY_IMAGE:$CI_COMMIT_SHORT_SHA
+    build: .
+    restart: unless-stopped
+    ports:
+      - 7323:7323/tcp
+      - 7324:7324/tcp
+    volumes:
+      - /root/rpc/chesscoin/data:/root/.chesscoin
+#    labels:
+#      io.rancher.scheduler.affinity:host_label: server.outline=${SERVER_OUTLINE}
+    command: chesscoind -conf=/opt/chesscoin.conf -rpcuser="user" -rpcpassword="MHLbrn8TIXnpQ1I"
