@@ -58,4 +58,4 @@ EXPOSE 7323
 EXPOSE 7324
 #
 WORKDIR /usr/local/bin
-#ENTRYPOINT ["./litecoind", "--conf=/opt/.litecoin.conf", "-rpcuser=litecoin-rpc", "-rpcpassword=PVXbX9M4bFpucs3XxSlb0RzBrxvYQkF3RaVKf67SAb6G"]
+
